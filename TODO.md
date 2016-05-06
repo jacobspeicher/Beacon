@@ -1,7 +1,7 @@
 ## Checklist
 
 ### Overall
-- [] Escape always gives an escape menu
+- [x] Escape always gives an escape menu
 - [] Escape (pause) menu should be in the middle of the screen
 
 ### Planning Screen

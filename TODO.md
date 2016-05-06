@@ -1,15 +1,15 @@
 ## Checklist
 
 ### Overall
-[x] Escape always gives an escape menu
-[ ] Escape (pause) menu should be in the middle of the screen
+- [x] Escape always gives an escape menu
+- [ ] Escape (pause) menu should be in the middle of the screen
 
 ### Planning Screen
 
-[ ] Pilot button on bottom right
-[ ] Move with arrow keys around planning area
-[ ] Move pick-up-able beacons from top left
-[ ] Space background
+- [ ] Pilot button on bottom right
+- [ ] Move with arrow keys around planning area
+- [ ] Move pick-up-able beacons from top left
+- [ ] Space background
 
 ### Piloting Screen
 

@@ -38,6 +38,7 @@ func _input(event):
 	if event.is_action_pressed("ui_accept"):
 		next_scene = get_node("/root/menu_variables").get_button_value()
 		if(next_scene != "quit"):
+			get_node("/root/menu_variables").set_index(get_node("/root/menu_variables").get_button_selector_index())
 			get_node("/root/scene_switch").goto_scene("res://Scenes/" + next_scene + ".scn")
 		else:
 			get_tree().quit()

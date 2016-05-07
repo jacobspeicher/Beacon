@@ -24,19 +24,23 @@ func _ready():
 	pos.push_back(Vector2(screen_size.x / 2 + 15, screen_size.y / 2 + 17))
 	pos.push_back(Vector2(screen_size.x / 2 + 152, screen_size.y / 2 + 17))
 	pos.push_back(Vector2(0, 0))
-	pos.push_back(Vector2(screen_size.x / 4.5 - 70, screen_size.y / 2 + 187))
+	pos.push_back(Vector2(screen_size.x / 2 - 70, screen_size.y / 5 + 353))
+	pos.push_back(Vector2(screen_size.x / 2 - 70, screen_size.y / 5 + 459))
 
 	end_pos.push_back(Vector2(screen_size.x / 2 - 233, screen_size.y / 2 + 17))
 	end_pos.push_back(Vector2(screen_size.x / 2 - 15, screen_size.y / 2 + 17))
 	end_pos.push_back(Vector2(screen_size.x / 2 + 127, screen_size.y / 2 + 17))
 	end_pos.push_back(Vector2(screen_size.x / 2 + 210, screen_size.y / 2 + 17))
 	end_pos.push_back(Vector2(0, 0))
-	end_pos.push_back(Vector2(screen_size.x / 4.5, screen_size.y / 2 + 187))
+	end_pos.push_back(Vector2(screen_size.x / 2, screen_size.y / 5 + 353))
+	end_pos.push_back(Vector2(screen_size.x / 2, screen_size.y / 5 + 459))
 
 	button_value.push_back("story")
 	button_value.push_back("instructions")
 	button_value.push_back("credits")
 	button_value.push_back("quit")
+
+	Input.set_mouse_mode(1)
 
 	# which index of pos and end_pos to use for the story parts
 	button_selector_index.push_back(4)
@@ -59,14 +63,16 @@ func _process(delta):
 	pos.push_back(Vector2(screen_size.x / 2 + 15, screen_size.y / 2 + 17))
 	pos.push_back(Vector2(screen_size.x / 2 + 152, screen_size.y / 2 + 17))
 	pos.push_back(Vector2(0, 0))
-	pos.push_back(Vector2(screen_size.x / 4.5 - 70, screen_size.y / 2 + 187))
+	pos.push_back(Vector2(screen_size.x / 2 - 70, screen_size.y / 5 + 353))
+	pos.push_back(Vector2(screen_size.x / 2 - 70, screen_size.y / 5 + 459))
 
 	end_pos.push_back(Vector2(screen_size.x / 2 - 233, screen_size.y / 2 + 17))
 	end_pos.push_back(Vector2(screen_size.x / 2 - 15, screen_size.y / 2 + 17))
 	end_pos.push_back(Vector2(screen_size.x / 2 + 127, screen_size.y / 2 + 17))
 	end_pos.push_back(Vector2(screen_size.x / 2 + 210, screen_size.y / 2 + 17))
 	end_pos.push_back(Vector2(0, 0))
-	end_pos.push_back(Vector2(screen_size.x / 4.5, screen_size.y / 2 + 187))
+	end_pos.push_back(Vector2(screen_size.x / 2, screen_size.y / 5 + 353))
+	end_pos.push_back(Vector2(screen_size.x / 2, screen_size.y / 5 + 459))
 
 func get_start_pos():
 	return pos[index]

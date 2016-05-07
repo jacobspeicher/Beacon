@@ -5,16 +5,24 @@ var screen_size = OS.get_video_mode_size()
 var next_scene = ""
 
 func _ready():
+
+	set_process_input(true)
+	set_process(true)
+
+func _process(delta):
+	screen_size = OS.get_video_mode_size()
+
 	get_node("Background").set_size(Vector2(screen_size.x, screen_size.y))
 
-	get_node("play").set_pos(Vector2(screen_size.x / 2 - 203.5, screen_size.y / 2))
-	get_node("instruct").set_pos(Vector2(screen_size.x / 2 - 103.5, screen_size.y / 2))
-	get_node("credits").set_pos(Vector2(screen_size.x / 2 + 49.5, screen_size.y / 2))
-	get_node("quit").set_pos(Vector2(screen_size.x / 2 + 163.5, screen_size.y / 2 ))
+	get_node("play").set_pos(Vector2(screen_size.x / 2 - 303, screen_size.y / 2))
+	get_node("instruct").set_pos(Vector2(screen_size.x / 2 - 203, screen_size.y / 2))
+	get_node("credits").set_pos(Vector2(screen_size.x / 2 + 15, screen_size.y / 2))
+	get_node("quit").set_pos(Vector2(screen_size.x / 2 + 152, screen_size.y / 2 ))
 
 	get_node("beacon").set_pos(Vector2(screen_size.x / 2 - get_node("beacon").get_size().x / 2, screen_size.y / 4))
 
-	set_process_input(true)
+	get_node("menu_selector").update()
+
 
 func _input(event):
 	if event.is_action_pressed("quit"):

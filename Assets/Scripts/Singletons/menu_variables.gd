@@ -17,6 +17,7 @@ func _ready():
 		color.push_back(Color(255, 253, 0))
 	color.push_back(Color(255, 255, 255))
 	color.push_back(Color(255, 255, 255))
+	color.push_back(Color(255, 255, 255))
 
 	pos.push_back(Vector2(screen_size.x / 2 - 303, screen_size.y / 2 + 17))
 	pos.push_back(Vector2(screen_size.x / 2 - 203, screen_size.y / 2 + 17))

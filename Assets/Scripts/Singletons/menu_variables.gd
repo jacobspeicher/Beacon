@@ -4,6 +4,8 @@ var sizes = []
 var pos = []
 var end_pos = []
 var button_value = []
+var button_selector_index = []
+
 var index = 0
 
 var screen_size = OS.get_video_mode_size()
@@ -29,6 +31,13 @@ func _ready():
 	button_value.push_back("instructions")
 	button_value.push_back("credits")
 	button_value.push_back("quit")
+
+	# which index of pos and end_pos to use for the story parts
+	button_selector_index.push_back(4)
+	# which index of pos and end_pos to use for the instruction menu back button
+	button_selector_index.push_back(5)
+	# which index of pos and end_pos to use for the credits menu back button
+	button_selector_index.push_back(6)
 
 	set_process(true)
 
@@ -66,6 +75,9 @@ func get_end_pos():
 
 func get_button_value():
 	return button_value[index]
+
+func get_button_selector_index():
+	return button_selector_index[index]
 
 func dec_index():
 	if index > 0:

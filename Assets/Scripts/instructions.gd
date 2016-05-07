@@ -13,16 +13,16 @@ func _process(delta):
 
 	get_node("TextureFrame").set_size(screen_size)
 
-	get_node("Planning").set_pos(Vector2(screen_size.x / 4.5 - get_node("Planning").get_size().x, screen_size.y / 3))
-	get_node("Piloting").set_pos(Vector2(screen_size.x / 4.5 - get_node("Piloting").get_size().x, screen_size.y / 2))
+	get_node("Planning").set_pos(Vector2(screen_size.x / 2 - get_node("Planning").get_size().x, screen_size.y / 5))
+	get_node("Piloting").set_pos(Vector2(screen_size.x / 2 - get_node("Piloting").get_size().x, screen_size.y / 5 + 126))
 
 	for i in range(2):
-		get_node("Planning"+str(i+1)).set_pos(Vector2(screen_size.x / 4.5, screen_size.y / 3 + (34 * (i + 1))))
+		get_node("Planning"+str(i+1)).set_pos(Vector2(screen_size.x / 2, screen_size.y / 5 + (42 * (i + 1))))
 
 	for i in range(3):
-		get_node("Piloting"+str(i+1)).set_pos(Vector2(screen_size.x / 4.5, screen_size.y / 2 + (34 * (i + 1))))
+		get_node("Piloting"+str(i+1)).set_pos(Vector2(screen_size.x / 2, screen_size.y / 5 + 126 + (42 * (i + 1))))
 
-	get_node("Back").set_pos(Vector2(screen_size.x / 4.5 - get_node("Back").get_size().x, screen_size.y / 2 + 170))
+	get_node("Back").set_pos(Vector2(screen_size.x / 2 - get_node("Back").get_size().x, screen_size.y / 5 + 336))
 
 	get_node("menu_selector").update()
 

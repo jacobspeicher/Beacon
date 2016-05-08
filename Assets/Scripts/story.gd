@@ -29,6 +29,8 @@ func _ready():
 
 	get_node("next").set_pos(Vector2(screen_size.x / 2 - get_node("next").get_size().x / 2, screen_size.y / 2 + 27))
 
+	get_node("tips").set_pos(Vector2(screen_size.x / 2 - get_node("tips").get_size().x / 2, screen_size.y / 2 + 150))
+
 	set_process_input(true)
 	set_process(true)
 
@@ -73,3 +75,7 @@ func _input(event):
 
 	if event.is_action_pressed("speed_up"):
 		typewrite_delay = 0.01
+
+	if event.is_action_pressed("quit"):
+		get_node("/root/menu_variables").set_index(0)
+		get_node("/root/scene_switch").goto_scene("res://Scenes/main_menu.scn")

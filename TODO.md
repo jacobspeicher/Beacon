@@ -21,8 +21,9 @@
 
 ### Main Menu Screen
 - [ ] Detail of overhead junk orbiting a planet
-- [ ] Ship is arrow for selecting menu item (along with mouse)
+- [x] Line for selecting menu items
 - [ ] Not 'steering' (piloting)
 
 ### Story Screen
-- [ ] Enter can progress story (get rid of button)
+- [x] Enter can progress story (get rid of button)
+- [ ] Get the story from the old game (or rewrite it, whatever happens)

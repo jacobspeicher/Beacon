@@ -18,12 +18,13 @@ func _ready():
 	color.push_back(Color(255, 255, 255))
 	color.push_back(Color(255, 255, 255))
 	color.push_back(Color(255, 255, 255))
+	color.push_back(Color(255, 255, 255))
 
 	pos.push_back(Vector2(screen_size.x / 2 - 303, screen_size.y / 2 + 17))
 	pos.push_back(Vector2(screen_size.x / 2 - 203, screen_size.y / 2 + 17))
 	pos.push_back(Vector2(screen_size.x / 2 + 15, screen_size.y / 2 + 17))
 	pos.push_back(Vector2(screen_size.x / 2 + 152, screen_size.y / 2 + 17))
-	pos.push_back(Vector2(0, 0))
+	pos.push_back(Vector2(screen_size.x / 2 - 36, screen_size.y / 2 + 44))
 	pos.push_back(Vector2(screen_size.x / 2 - 70, screen_size.y / 5 + 353))
 	pos.push_back(Vector2(screen_size.x / 2 - 70, screen_size.y / 5 + 459))
 
@@ -31,7 +32,7 @@ func _ready():
 	end_pos.push_back(Vector2(screen_size.x / 2 - 15, screen_size.y / 2 + 17))
 	end_pos.push_back(Vector2(screen_size.x / 2 + 127, screen_size.y / 2 + 17))
 	end_pos.push_back(Vector2(screen_size.x / 2 + 210, screen_size.y / 2 + 17))
-	end_pos.push_back(Vector2(0, 0))
+	end_pos.push_back(Vector2(screen_size.x / 2 + 36, screen_size.y / 2 + 44))
 	end_pos.push_back(Vector2(screen_size.x / 2, screen_size.y / 5 + 353))
 	end_pos.push_back(Vector2(screen_size.x / 2, screen_size.y / 5 + 459))
 
@@ -62,7 +63,7 @@ func _process(delta):
 	pos.push_back(Vector2(screen_size.x / 2 - 203, screen_size.y / 2 + 17))
 	pos.push_back(Vector2(screen_size.x / 2 + 15, screen_size.y / 2 + 17))
 	pos.push_back(Vector2(screen_size.x / 2 + 152, screen_size.y / 2 + 17))
-	pos.push_back(Vector2(0, 0))
+	pos.push_back(Vector2(screen_size.x / 2 - 36, screen_size.y / 2 + 44))
 	pos.push_back(Vector2(screen_size.x / 2 - 70, screen_size.y / 5 + 353))
 	pos.push_back(Vector2(screen_size.x / 2 - 70, screen_size.y / 5 + 459))
 
@@ -70,7 +71,7 @@ func _process(delta):
 	end_pos.push_back(Vector2(screen_size.x / 2 - 15, screen_size.y / 2 + 17))
 	end_pos.push_back(Vector2(screen_size.x / 2 + 127, screen_size.y / 2 + 17))
 	end_pos.push_back(Vector2(screen_size.x / 2 + 210, screen_size.y / 2 + 17))
-	end_pos.push_back(Vector2(0, 0))
+	end_pos.push_back(Vector2(screen_size.x / 2 + 36, screen_size.y / 2 + 44))
 	end_pos.push_back(Vector2(screen_size.x / 2, screen_size.y / 5 + 353))
 	end_pos.push_back(Vector2(screen_size.x / 2, screen_size.y / 5 + 459))
 

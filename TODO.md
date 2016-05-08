@@ -1,7 +1,7 @@
-## Checklist
+cd ## Checklist
 
 ### Overall
-- [ ] Escape always gives an escape menu or returns to main menu
+- [ ] Escape always gives an escape menu
 - [ ] Escape (pause) menu should be in the middle of the screen
 
 ### Planning Screen
@@ -21,9 +21,8 @@
 
 ### Main Menu Screen
 - [ ] Detail of overhead junk orbiting a planet
-- [x] Line for selecting menu items
-- [x] Not 'steering' (piloting)
+- [ ] Ship is arrow for selecting menu item (along with mouse)
+- [ ] Not 'steering' (piloting)
 
 ### Story Screen
-- [x] Enter can progress story (get rid of button)
-- [ ] Get the story from the old game (or rewrite it, whatever happens)
+- [ ] Enter can progress story (get rid of button)

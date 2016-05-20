@@ -17,6 +17,8 @@ var cur_story_line = 0
 
 var screen_size = OS.get_video_mode_size()
 
+var in_area = false
+
 func _ready():
 
 	typewrite_mode = true
@@ -56,6 +58,7 @@ func _process(delta):
 		typewrite_text = ""
 		typewrite_cursor = -1
 		typewrite_mode = false
+		get_node("next/next_area").set_pos(Vector2(0, 0))
 		get_node("next").set_percent_visible(1)
 		get_node("menu_selector").change_draw(true)
 		get_node("menu_selector").update()
@@ -69,6 +72,8 @@ func _input(event):
 		else:
 			typewrite_mode = true
 			typewrite_text = typewrite_story[cur_story_line]
+			get_node("next/next_area").set_pos(Vector2(4000, 0))
+			in_area = false
 			get_node("next").set_percent_visible(0)
 			get_node("menu_selector").change_draw(false)
 			get_node("menu_selector").update()
@@ -79,3 +84,23 @@ func _input(event):
 	if event.is_action_pressed("quit"):
 		get_node("/root/menu_variables").set_index(0)
 		get_node("/root/scene_switch").goto_scene("res://Scenes/main_menu.scn")
+
+	if event.type == InputEvent.MOUSE_BUTTON and event.button_index == BUTTON_LEFT and in_area:
+		cur_story_line += 1
+		if cur_story_line == get_node("/root/story_variables").get_cur_scene_size():
+			get_node("/root/story_variables").inc_cur_scene()
+			get_node("/root/scene_switch").goto_scene("res://Scenes/story.scn")
+		else:
+			typewrite_mode = true
+			typewrite_text = typewrite_story[cur_story_line]
+			get_node("next/next_area").set_pos(Vector2(4000, 0))
+			in_area = false
+			get_node("next").set_percent_visible(0)
+			get_node("menu_selector").change_draw(false)
+			get_node("menu_selector").update()
+
+func on_mouse_enter():
+	in_area = true
+
+func on_mouse_exit():
+	in_area = false

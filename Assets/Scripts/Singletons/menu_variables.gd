@@ -41,8 +41,6 @@ func _ready():
 	button_value.push_back("credits")
 	button_value.push_back("quit")
 
-	Input.set_mouse_mode(1)
-
 	# which index of pos and end_pos to use for the story parts
 	button_selector_index.push_back(4)
 	# which index of pos and end_pos to use for the instruction menu back button
@@ -92,6 +90,9 @@ func get_button_selector_index():
 
 func set_index(var i):
 	index = i
+
+func get_index():
+	return index
 
 func dec_index():
 	if index > 0:

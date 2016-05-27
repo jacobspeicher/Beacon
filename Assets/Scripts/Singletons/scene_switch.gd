@@ -15,7 +15,7 @@ func goto_scene(var path):
 func _deferred_goto(var path):
 
 	# free the current scene
-	current_scene.free()
+	current_scene.queue_free()
 
 	# load the scene
 	var s = ResourceLoader.load(path)

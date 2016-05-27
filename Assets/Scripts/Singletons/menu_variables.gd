@@ -91,9 +91,6 @@ func get_button_selector_index():
 func set_index(var i):
 	index = i
 
-func get_index():
-	return index
-
 func dec_index():
 	if index > 0:
 		index -= 1

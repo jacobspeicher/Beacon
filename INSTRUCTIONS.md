@@ -8,3 +8,8 @@
 - Use W/S or Up/Down to pilot vertically
 - Use A/D or Left/Right to start and stop flying right
 - Press Escape with piloting to pause
+
+## Platforming
+- Arrow keys to run
+- V to jump
+- C for actions?

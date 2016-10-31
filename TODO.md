@@ -14,7 +14,9 @@
 
 - [ ] Pilot button on bottom right
 - [ ] Move with arrow keys around planning area
-- [ ] Move pick-up-able beacons from top left
+- [ ] Move pick-up-able beacons from top left to bottom center
+- [ ] Placing beacons is a one-click pickup, one-click drop
+- [ ] Allow picking up a beacon once placed
 - [ ] Space background
 
 ### Piloting Screen

@@ -22,4 +22,4 @@
 - Beacons bring things back into phase so they're visible
 - Things on the planet are drifting out of phase as well.
 - The guy is looking for a way to bring everything out of phase back into our universe
-- 
+- Platforming?

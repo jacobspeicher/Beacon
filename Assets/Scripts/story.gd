@@ -121,7 +121,7 @@ func _input(event):
 		# story it's at
 		if cur_story_line == get_node("/root/story_variables").get_cur_scene_size():
 			get_node("/root/story_variables").inc_cur_scene()
-			get_node("/root/scene_switch").goto_scene("res://Scenes/story.scn")
+			get_node("/root/scene_switch").goto_scene("res://Scenes/Game/place.scn")
 		else:
 			# else, remake the text node so that centering works again
 			var text_theme = text.get_theme()
